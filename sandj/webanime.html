@@ -1,0 +1,258 @@
+0<!DOCTYPE html> 
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Anime World</title>
+        <link rel="icon" href="img/18.jpg">
+        <meta charshet="utf-8">
+        <link rel="stylesheet" type="text/css" href="stylanime.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="tieude">
+            <div class="ten">   
+                <h1>Anime World</h1>
+            </div>
+            <div class="logo">
+                <img src="">
+            </div>
+            <div class="congcu">
+            <ul>
+                <li><a href="#">Registration</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>   
+            </div>
+        </div>
+        <div class="search">
+                <input type="text" name="" class="search-txt" placeholder="search..."/>
+                <a class="search-btn">
+                  <i class="fas fa-search"></i>
+                </a>
+         </div>
+         <div class="box">
+            <div class="mucluc"> 
+                <ul>
+                          <li><a href="#">HOME</a></li>
+                          <li><a href="#">NEWS</a></li>
+                        <li> 
+                            <a href="#">KINDS</a>
+                            <ul class="theloai">
+                               <li><a href="#">Harem</a></li>
+                               <li><a href="#">Tosukatsu</a></li>
+                               <li><a href="#">Yuri</a></li>
+                               <li><a href="#">Honnor</a></li>
+                               <li><a href="#">Romatic</a></li>
+                               <li><a href="#">Fantasy</a></li>
+                             </ul>
+                        </li>        
+                          <li>
+                            <a href="#">Season Anime</a>
+                            <ul class="muaanime">
+                              <li><a href="#">Mùa Xuân 2018 </a></li>
+                              <li><a href="#">Mùa hè 2018</a></li>
+                              <li><a href="#">Mùa thu 2018</a></li>
+                              <li><a href="#">Mùa đông 2018</a></li>
+                              <li><a href="#">Mùa xuân 2019</a></li>
+                          </ul>
+                  </li>
+                          <li><a href="#">Hỏi-đáp</a></li>
+                </ul>
+                      </div>     
+              
+                      <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                          <div class="numbertext"></div>
+                          <img src="img/images2.jpg" style="width:100%">
+                          <div class="text">Doraemon</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext"></div>
+                          <img src="img/images3.jpg" style="width:100%">
+                          <div class="text">Shokugeki no Souma</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">3 / 3</div>
+                          <img src="img/images4.jpg" style="width:100%">
+                          <div class="text">Tokyo Ghoul</div>
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                        </div>
+                        <br>
+                        
+                        <div style="text-align:center">
+                          <span class="dot" onclick="currentSlide(1)"></span> 
+                          <span class="dot" onclick="currentSlide(2)"></span> 
+                          <span class="dot" onclick="currentSlide(3)"></span> 
+                        </div>
+                        
+                        <script>
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+                        
+                        function plusSlides(n) {
+                          showSlides(slideIndex += n);
+                        }
+                        
+                        function currentSlide(n) {
+                          showSlides(slideIndex = n);
+                        }
+                        
+                        function showSlides(n) {
+                          var i;
+                          var slides = document.getElementsByClassName("mySlides");
+                          var dots = document.getElementsByClassName("dot");
+                          if (n > slides.length) {slideIndex = 1}    
+                          if (n < 1) {slideIndex = slides.length}
+                          for (i = 0; i < slides.length; i++) {
+                              slides[i].style.display = "none";  
+                          }
+                          for (i = 0; i < dots.length; i++) {
+                              dots[i].className = dots[i].className.replace(" active", "");
+                          }
+                          slides[slideIndex-1].style.display = "block";  
+                          dots[slideIndex-1].className += " active";
+                        }
+                        </script>
+                        
+                            var slideIndex = 0;
+                            showSlides();
+                            
+                            function showSlides() {
+                              var i;
+                              var slides = document.getElementsByClassName("mySlides");
+                              var dots = document.getElementsByClassName("dot");
+                              for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";  
+                              }
+                              slideIndex++;
+                              if (slideIndex > slides.length) {slideIndex = 1}    
+                              for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slides[slideIndex-1].style.display = "block";  
+                              dots[slideIndex-1].className += " active";
+                              setTimeout(showSlides, 4000); 
+                            }
+            </script> 
+            
+            <div class="trailer">
+              <h1> Trailer </h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wuIbeQv3v7c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class=dexuat>
+                <h2>Anime Đề Xuất</h2>
+            </div>
+
+             <div class="wrapper">
+              <div class="item item1">
+               <a href="https://m.media-amazon.com/images/M/MV5BZWRkYmU4NzEtZWIyNi00YTc2LWJiY2MtYTE3YWU1NzI1NzIzXkEyXkFqcGdeQXVyNzY2MDY0MzU@._V1_.jpg" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BZWRkYmU4NzEtZWIyNi00YTc2LWJiY2MtYTE3YWU1NzI1NzIzXkEyXkFqcGdeQXVyNzY2MDY0MzU@._V1_.jpg"  width="185px" height="240px"></a>    
+                </div>
+                <div class="item item2">
+                  <img src="img/1.jpg" style="width:185px; height:240px;">
+                </div>
+                <div class="item item3">
+                  <img src="img/2.jpg" style="width:185px; height:240px;">
+                </div>
+                <div class="item item4">
+                  <img src="img/3.jpg" style="width:185px; height:240px;">
+                </div>
+                <div class="item item5">
+                  <img src="img/16.jpg" style="width:185px; height:240px;">
+                </div>
+                <div class="item item6">
+                  <img src="img/5.jpg" style="width:185px; height:240px;">
+                </div>
+                <div class="item item1">
+                  <img src="img/6.jpg" style="width:185px; height:240px;">
+                </div>
+                <div class="item item2">
+                  <img src="img/7.jpg" style="width:185px; height:240px;">
+                </div>
+                <div class="item item1">
+                  <img src="img/8.jpg" style="width:185px; height:240px;">
+                </div>
+                <div class="item item6">
+                  <img src="img/9.jpg" style="width:185px; height:240px;">
+                </div>
+                <div class="item item1">
+                  <img src="img/10.jpg" style="width:185px; height:240px;">
+                </div>
+                <div class="item item2">
+                  <img src="img/11.jpg" style="width:185px; height:240px;">
+                </div>
+                <div class="item item1">
+                  <img src="img/12.jpg" style="width:185px; height:240px;">
+                </div>
+                <div class="item item6">
+                  <img src="img/13.jpg" style="width:185px; height:240px;">
+                </div>
+                <div class="item item1">
+                  <img src="img/14.jpg" style="width:185px; height:240px;">
+                </div>
+                <div class="item item2">
+                  <img src="img/15.jpg" style="width:185px; height:240px;">
+                </div>
+           </div>
+           <div class="quangcao">
+             <img src="img/17.jpg" style="width:280px; height: 300px;">
+           </div> 
+           <div class=bxh>
+              <h2>Bang xep hang</h2>
+          </div>
+          <div class=xemnhieu>
+              <ul>
+                  <li>
+                      <div class=top1>
+                          <img src="img/1.jpg"width=60px height="60px">
+                          <p class=topxem>Dragon Ball</p>
+                      </div>
+                  </li>
+                  <li>
+                  <div class=top2>
+                      <img src="img/3.jpg"width="60px"height="60px">
+                      <p class=topxemn>Shokugeki No Soma</p>
+                  </div>
+                  </li>
+  
+                  <li>
+                  <div class=top3>
+                      <img src="img/16.jpg"width="60px"height="60px">
+                      <p class=topxem>Conan</p>
+                  </div>
+                  </li>
+  
+                  <li>
+                  <div class=top4>
+                      <img src="img/14.jpg"width="60px"height="60px">
+                      <p class=topxem>Worl Chidren</p>
+                  </div>
+                  </li>
+  
+                  <li>
+                  <div class=top5> 
+                      <img src="img/10.jpg"width="60px"height="60px">                  
+                      <p class=topxem>Fate Stay Night</p>
+                  </div>
+                  </li>
+                  <div class=end>
+                      <div class=chamsockhachhang>
+                          <h4>Chăm Sóc Khách Hàng</h4>
+                          <ul class=subchamsockhachhang>
+                              <li><a href="#">Mail Liên Hệ</a></li> 
+                              <li><a href="#">Hướng Dẫn Sử Dụng</a></li>
+                              <li><a href="#">Hỗ Trợ</a></li>
+                          </ul>
+                      </div>  
+                      <div class="agf">
+                        <a>gjhgjgjhlkjh</a>
+                      </div>                                     
+        </div>         
+    </body>
+</html>

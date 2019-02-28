@@ -1,0 +1,7 @@
+.khung
+{
+    border-radius:40px;
+    background-color: hsl(0, 100%, 90%);
+    height: 240px;
+    width: 130px;
+}
